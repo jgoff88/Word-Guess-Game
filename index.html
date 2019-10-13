@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wordguess</title>
+</head>
+<body>
+    <script>
+        var letters= ['a','b','c','d']
+        var compGuess = letters[0];
+        document.onkeyup = function(event){
+            var userGuess= event.key.toLocaleLowerCase();
+            console.log("keypressed:", userGuess);
+            if(compGuess === userGuess){
+                alert("You win!");
+            } else {
+                alert("You Lost!");
+            }
+        }
+    </script>
+    
+</body>
+</html>
